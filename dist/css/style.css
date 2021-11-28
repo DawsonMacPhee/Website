@@ -275,6 +275,23 @@ p{
     
     }
 
+    .jsTableImage{
+    
+        width: 95%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px;
+    
+    }
+
+    .lTableImage{
+    
+        width: 72%;
+        padding: 5px;
+        margin: 0px;
+    
+    }
+
     .ide{
         
         margin-left: 25%;
@@ -333,6 +350,23 @@ p{
     
         width: 75%;
         padding:0px;
+        margin: 0px;
+    
+    }
+
+    .jsTableImage{
+    
+        width: 95%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px;
+    
+    }
+
+    .lTableImage{
+    
+        width: 72%;
+        padding: 5px;
         margin: 0px;
     
     }
@@ -399,6 +433,23 @@ p{
     
     }
 
+    .jsTableImage{
+    
+        width: 75%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px;
+    
+    }
+
+    .lTableImage{
+    
+        width: 52%;
+        padding: 5px;
+        margin: 0px;
+    
+    }
+
     .ide{
         
         margin-left: 30%;
@@ -457,6 +508,23 @@ p{
     
         width: 35%;
         padding:0px;
+        margin: 0px;
+    
+    }
+
+    .jsTableImage{
+    
+        width: 55%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px;
+    
+    }
+
+    .lTableImage{
+    
+        width: 32%;
+        padding: 5px;
         margin: 0px;
     
     }
