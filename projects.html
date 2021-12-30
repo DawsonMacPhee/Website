@@ -23,6 +23,38 @@
         </header>
         <section>
             <h1 class="subtitle">My Projects</h1>
+            <div class="card" id="rs">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/Java_Handbook.jpg" class="cardImage"></td>
+                            <td><h1 class="cardTitle">ResearchSpace</h1>
+                                <p style="padding-left: 20px;">ResearchSpace is an open-source platform for linked open data visualization, creation, and 
+                                    publication, currently under developement by the British Royal Museum in London England. It is a tool that the LINCS project
+                                    has been working on expanding and modifying to meet its specific requirements. I have been one of the main developers working on 
+                                    this project for LINCS, and in doing so have made contributions to the main project repository hosted by the British Royal Museum.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;"> The platform is built using Java Springboot for the backend, with a webpacked React App 
+                                        frontend. It makes use of Blazegraph Triplestores, LDP Containers, Keycloak SSO, Pac4j Security, Apache Shiro, and a Cantaloupe IIIF 
+                                        Image server to drive data persistence, authentication, and dataset visualizations. My contributions to the main repository 
+                                        include Keycloak SSO login configuration. This allows platform hosters to configure the platform to accept authentication for user login using 
+                                        the Keycloak SSO that other LINCS tools use. I also designed a timeline visualization component and implemented multilingualization using 
+                                        standard i18n tags. My contibutions to the LINCS repository are mainly UX and cosmetic changes.
+                                    </p>
+                                    <a href="https://github.com/researchspace/researchspace" target="_blank"><label class="downloadButton">View The Main Repository</label></a>
+                                    <a href="https://gitlab.com/calincs/infrastructure/researchspace-fork" target="_blank"><label class="downloadButton">View The LINCS Repository</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
             <div class="card" id="java">
                 <table class="tableCard">
                     <colgroup>
@@ -252,6 +284,35 @@
                                     <a href="https://github.com/DawsonMacPhee/Linked-List-Library" target="_blank"><label class="downloadButton">Linked Lists</label></a>
                                     <a href="https://github.com/DawsonMacPhee/Binary-Tree-Library" target="_blank"><label class="downloadButton">Trees</label></a>
                                     <a href="https://github.com/DawsonMacPhee/Hashtable-Library" target="_blank"><label class="downloadButton">Hashtables</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
+            <div class="card" id="clode">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/Java_Handbook.jpg" class="cardImage"></td>
+                            <td><h1 class="cardTitle">Linked Open Data Visualization</h1>
+                                <p style="padding-left: 20px;">The Linked Open Data Visualization (Lod Viz), is another project I worked on for the LINCS project. This is 
+                                    a visualization of linked open data that was originally designed by the Urban Complexity Lab (UCLAB) in Germany. The original version
+                                    of this tool ran off csv data, instead of lod as it's meant to. My contribution to the project was to create a form to generate true lod, 
+                                    create an admin page for vetting the form data, and then modifying the visualization to run off the generated data.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;"> Lod Viz is a PHP application, and for my modifications I had to learn the language. I used a Postgres 
+                                        database to hold form submissions, basic auth for an admin page, Vue.js for UX components, a PHP library called EasyRdf to generate 
+                                        the lod, and an Apache Fuseki triplestore to hold the generated data. After finishing my changes, I created a Python script with the 
+                                        Pandas and Rdflib modules to translate the existing csv formatted data into lod.
+                                    </p>
+                                    <a href="https://gitlab.com/calincs/access/lod-viz" target="_blank"><label class="downloadButton">View The Repository</label></a>
                                     <p></p>
                                 </div>
                                 <h2 class="expand">Read More</h2></td>

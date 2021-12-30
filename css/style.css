@@ -45,6 +45,7 @@ hr{
     padding-bottom: 5px;
     font-family: body;
     cursor: pointer;
+    white-space: nowrap;
 
 }
 
@@ -64,6 +65,7 @@ hr{
     padding-bottom: 5px;
     font-family: body;
     cursor: pointer;
+    white-space: nowrap;
 
 }
 
@@ -83,6 +85,7 @@ hr{
     padding-bottom: 5px;
     font-family: body;
     cursor:  pointer;
+    white-space: nowrap;
 
 }
 
