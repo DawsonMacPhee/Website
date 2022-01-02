@@ -318,6 +318,34 @@
                     </tbody>  
                 </table>    
             </div>
+            <div class="card" id="uid">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/RS.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">UID Generator</h1>
+                                <p style="padding-left: 20px;">The UID generator is a really simple web service developed for the LINCS project. An essential part of linked open data generation is the need
+                                    to mint new URIs. This webservice is responsible for the creation of these URIs according to LINCS specification. Considering the amount of unique identifiers we need, it 
+                                    made the most sense to create a service that would do it for us and allow us to standardize the lengths and characters used. This service also prevents the rare case of 
+                                    overlapping two different resources with the same URI.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;">This service consists of two endpoints, one for generating a single UID and one for batch generating multiple UIDs. The service is built off 
+                                        Node.JS, with a library called NanoID for UID generation, and a Postgres database for storing UIDs that have already been generated. This project gave me my first experience 
+                                        at setting up a Kubenetes Deployment through GitLab Autodevops. I also learned alot about setting up both Docker and Docker Compose for local developement.
+                                    </p>
+                                    <a href="https://gitlab.com/calincs/conversion/lincs-uid" target="_blank"><label class="downloadButton">View The Repository</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
             <div class="card" id="clode">
                 <table class="tableCard">
                     <colgroup>
