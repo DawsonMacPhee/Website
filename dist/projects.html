@@ -66,13 +66,13 @@
                             <td><img src = "images/nssi.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">NSSI</h1>
                                 <p style="padding-left: 20px;">The NERVE Secure and Scalable Infrastructure (NSSI) is a web api for managing the data conversion workflows used by tools and apps 
-                                    developed by LINCS. NSSI is modularized, and built to be configurable to support multiple data conversion services all accessible from one convient 
-                                    endpoint. Essentially, NSSI is all about the organization, scalability, and queuing of large data processing tasks. Upon receieving a request, the service is responsible 
+                                    developed by LINCS. NSSI is modularized, and built to be configurable to support multiple data conversion services all accessible from one convenient 
+                                    endpoint. Essentially, NSSI is all about the organization, scalability, and queueing of large data processing tasks. Upon receiving a request, the service is responsible 
                                     for dispatching the data to the correct service queue, loading the data into the system, and setting up a uri from which the processed data can be accessed from.
                                 </p>
                                 <div class="expandCard">
                                     <p style="padding-left: 20px;"> NSSI is built off Java Springboot, with Keycloak SSO security, and a RabbitMQ queueing system. The scalability comes from 
-                                        a special kubernetes deployment setup, allowing us to scale the number of instances of each service to meet its individual demand. My contributions to NSSI include 
+                                        a special Kubernetes deployment setup, allowing us to scale the number of instances of each service to meet its individual demand. My contributions to NSSI include 
                                         setting up a standardized JSON logging system for easy debugging, creating a calculation for estimating the time to completion for a job, and creating 
                                         a push notification system to inform users when their jobs have finished.
                                     </p>
@@ -152,13 +152,13 @@
                             <td><img src = "images/keycloak.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">Keycloak Configuration TUI</h1>
                                 <p style="padding-left: 20px;">The Keycloak Configuration TUI is a script I built for the configuration of the LINCS Keycloak instance. Keycloak is the SSO provider 
-                                    that the LINCS project has chosen to use across all of its tools and services. The point of this script is to provide admins the ability to easily configure the 
-                                    service across all developement environments and all projects that require authentication.
+                                    that the LINCS project has chosen to use across all of its tools and services. The point of this script is to provide administrators the ability to easily configure the 
+                                    service across all development environments and all projects that require authentication.
                                 </p>
                                 <div class="expandCard">
-                                    <p style="padding-left: 20px;"> The TUI (Terminal User Interface) is built in python using the urwid module. Keycloak configuration files are stored as JSON, 
-                                        which are what the TUI is responsible for generating based of a predefined set of questions that are prompted by the interface. This allows us to ensure some 
-                                        amount of standardization across multiple apps that access this authentication provider. Following the generation of these json files, they are deployed via a 
+                                    <p style="padding-left: 20px;"> The TUI (Terminal User Interface) is built in Python using the Urwid module. Keycloak configuration files are stored as JSON, 
+                                        which are what the TUI is responsible for generating based on a predefined set of questions that are prompted by the interface. This allows us to ensure some 
+                                        amount of standardization across multiple apps that access this authentication provider. Following the generation of these JSON files, they are deployed via a 
                                         simple HTTP request made to the service.
                                     </p>
                                     <a href="https://gitlab.com/calincs/infrastructure/keycloak-config" target="_blank"><label class="downloadButton">View The Repository</label></a>
