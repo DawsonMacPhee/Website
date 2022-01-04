@@ -34,7 +34,7 @@
                             <td><img src = "images/RS.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">ResearchSpace</h1>
                                 <p style="padding-left: 20px;">ResearchSpace is an open-source platform for linked open data visualization, creation, and 
-                                    publication, currently under developement by the British Royal Museum in London England. It is a tool that the LINCS project
+                                    publication, currently under development by the British Royal Museum in London England. It is a tool that the LINCS project
                                     has been working on expanding and modifying to meet its specific requirements. I have been one of the main developers working on 
                                     this project for LINCS, and in doing so have made contributions to the main project repository hosted by the British Royal Museum.
                                 </p>
@@ -299,15 +299,15 @@
                         <tr>
                             <td><img src = "images/extension.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">The LINCS Browser Extension</h1>
-                                <p style="padding-left: 20px;">The LINCS browser extension is a chromium based extension designed as an access point for the datasets that LINCS stores. The basic 
-                                    function of the extension is to act as a webpage scanner for information related to the datasets of LINCS's research partners. After opening the extension on a 
-                                    website, the entire content of the site is ran through an NER algorithm, the results of which are then queried against the LINCS triplestore. After this, the 
+                                <p style="padding-left: 20px;">The LINCS browser extension is a Chromium-based extension designed as an access point for the datasets that LINCS stores. The basic 
+                                    function of the extension is to act as a webpage scanner for information related to the datasets of LINCS' research partners. After opening the extension on a 
+                                    website, the entire content of the site is run through an NER algorithm, the results of which are then queried against the LINCS triplestore. After this, the 
                                     related information is displayed inline in the website content, with links provided that connect out to other LINCS tools.
                                 </p>
                                 <div class="expandCard">
-                                    <p style="padding-left: 20px;"> The main advantage of this extension is to provide researchers an idea of the type of information LINCS can offer them. The extension is 
+                                    <p style="padding-left: 20px;"> The main purpose of this extension is to provide researchers with an idea of the type of information LINCS can offer them. The extension is 
                                         built using JS and HTML, along with the Wink NLP Library and SPARQL queries sent to an Apache Fuseki triplestore. I was the main developer working on this project 
-                                        for LINCS, with my employers giving me a list of requirements and allowing me the freedom to build the extension from the ground up. Later on in the developement 
+                                        for LINCS, with my employers giving me a list of requirements and allowing me the freedom to build the extension from the ground up. Later on in the development 
                                         cycle, I worked directly with the UX team for the project to develop and implement an interface that is visually appealing and functional.
                                     </p>
                                     <a href="https://gitlab.com/calincs/access/browser-plugin" target="_blank"><label class="downloadButton">View The Repository</label></a>
@@ -329,14 +329,14 @@
                             <td><img src = "images/uuid.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">UUID Generator</h1>
                                 <p style="padding-left: 20px;">The UUID generator is a really simple web service developed for the LINCS project. An essential part of linked open data generation is the need
-                                    to mint new URIs. This webservice is responsible for the creation of these URIs according to LINCS specification. Considering the amount of unique identifiers we need, it 
+                                    to mint new URIs. This webservice is responsible for the creation of these URIs according to LINCS specifications. Considering the amount of universally unique identifiers we need, it 
                                     made the most sense to create a service that would do it for us and allow us to standardize the lengths and characters used. This service also prevents the rare case of 
                                     overlapping two different resources with the same URI.
                                 </p>
                                 <div class="expandCard">
                                     <p style="padding-left: 20px;">This service consists of two endpoints, one for generating a single UUID and one for batch generating multiple UUIDs. The service is built off 
                                         Node.JS, with a library called NanoID for UUID generation, and a Postgres database for storing UUIDs that have already been generated. This project gave me my first experience 
-                                        at setting up a Kubenetes Deployment through GitLab Autodevops. I also learned alot about setting up both Docker and Docker Compose for local developement.
+                                        at setting up a Kubernetes Deployment through GitLab Autodevops. I also learned alot about setting up both Docker and Docker Compose for local development.
                                     </p>
                                     <a href="https://gitlab.com/calincs/conversion/lincs-uid" target="_blank"><label class="downloadButton">View The Repository</label></a>
                                     <p></p>
