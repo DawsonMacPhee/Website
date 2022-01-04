@@ -34,7 +34,7 @@
                             <td><img src = "images/RS.png" class="cardImage"></td>
                             <td><h1 class="cardTitle">ResearchSpace</h1>
                                 <p style="padding-left: 20px;">ResearchSpace is an open-source platform for linked open data visualization, creation, and 
-                                    publication, currently under developement by the British Royal Museum in London England. It is a tool that the LINCS project
+                                    publication, currently under development by the British Royal Museum in London England. It is a tool that the LINCS project
                                     has been working on expanding and modifying to meet its specific requirements. I have been one of the main developers working on 
                                     this project for LINCS, and in doing so have made contributions to the main project repository hosted by the British Royal Museum.
                                 </p>
@@ -43,8 +43,8 @@
                                         frontend. It makes use of Blazegraph Triplestores, LDP Containers, Keycloak SSO, Pac4j Security, Apache Shiro, and a Cantaloupe IIIF 
                                         Image server to drive data persistence, authentication, and dataset visualizations. My contributions to the main repository 
                                         include Keycloak SSO login configuration. This allows platform hosters to configure the platform to accept authentication for user login using 
-                                        the Keycloak SSO that other LINCS tools use. I also designed a timeline visualization component and implemented multilingualization using 
-                                        standard i18n tags. My contibutions to the LINCS repository are mainly UX and cosmetic changes.
+                                        the Keycloak SSO that other LINCS tools use. I also designed a timeline visualization component and implemented platform-wide multilingualization using 
+                                        standard i18n tags. My contributions to the LINCS repository are mainly UX and cosmetic changes.
                                     </p>
                                     <a href="https://github.com/researchspace/researchspace" target="_blank"><label class="downloadButton">View The Main Repository</label></a>
                                     <a href="https://gitlab.com/calincs/infrastructure/researchspace-fork" target="_blank"><label class="downloadButton">View The LINCS Repository</label></a>
@@ -55,7 +55,7 @@
                     </tbody>  
                 </table>    
             </div>
-            <div class="card" id="java">
+            <div class="card" id="nssi">
                 <table class="tableCard">
                     <colgroup>
                             <col span="1" style="width: 25%;">
@@ -63,21 +63,20 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td><img src = "images/Java_Handbook.jpg" class="cardImage"></td>
-                            <td><h1 class="cardTitle">The Java Handbook</h1>
-                                <p style="padding-left: 20px;">The Java Handbook is one of my oldest projects, and is meant to be used while coding in
-                                    Java. The idea is that as I learn the language, I add pages to the program as a form of note taking.
-                                    That way when I'm coding, I have this program open to easily reference the syntax and usage of a native method. Since
-                                    its creation, I have continuously added to the project and still update it to this day.
+                            <td><img src = "images/nssi.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">NSSI</h1>
+                                <p style="padding-left: 20px;">The NERVE Secure and Scalable Infrastructure (NSSI) is a web api for managing the data conversion workflows used by tools and apps 
+                                    developed by LINCS. NSSI is modularized, and built to be configurable to support multiple data conversion services all accessible from one convenient 
+                                    endpoint. Essentially, NSSI is all about the organization, scalability, and queueing of large data processing tasks. Upon receiving a request, the service is responsible 
+                                    for dispatching the data to the correct service queue, loading the data into the system, and setting up a uri from which the processed data can be accessed from.
                                 </p>
                                 <div class="expandCard">
-                                    <p style="padding-left: 20px;">The app is, of course, programmed with Java. Java is my most confident programming 
-                                        language and this app has been a really good learning experience for me. It's creation offered me 
-                                        valuable practise with JSwing GUI components. In addition to Java, this app also gave me my first experience 
-                                        with HTML. The text displayed is styled with HTML using a JEditorPane. This is definitely one of 
-                                        my most used and most useful apps.
+                                    <p style="padding-left: 20px;"> NSSI is built off Java Springboot, with Keycloak SSO security, and a RabbitMQ queueing system. The scalability comes from 
+                                        a special Kubernetes deployment setup, allowing us to scale the number of instances of each service to meet its individual demand. My contributions to NSSI include 
+                                        setting up a standardized JSON logging system for easy debugging, creating a calculation for estimating the time to completion for a job, and creating 
+                                        a push notification system to inform users when their jobs have finished.
                                     </p>
-                                    <a href="downloads/TheJavaHandbook.jar" download><label class="downloadButton">Download The Java Handbook</label></a>
+                                    <a href="https://gitlab.com/calincs/conversion/NSSI" target="_blank"><label class="downloadButton">View The Repository</label></a>
                                     <p></p>
                                 </div>
                                 <h2 class="expand">Read More</h2></td>
@@ -142,7 +141,7 @@
                     </tbody>  
                 </table>    
             </div>
-            <div class="card" id="python">
+            <div class="card" id="keycloak">
                 <table class="tableCard">
                     <colgroup>
                             <col span="1" style="width: 25%;">
@@ -150,21 +149,20 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <td><img src = "images/Python_Handbook.jpg" class="cardImage"></td>
-                            <td><h1 class="cardTitle">The Python Handbook</h1>
-                                <p style="padding-left: 20px;">The Python Handbook is equivalent to the Java Handbook, but for Python. 
-                                    I find it very nice to have programs like this that give me quick refreshers on syntax and modules. The 
-                                    Python Handbook is in its infancy stages; there is still alot more to add as I become more comfortable 
-                                    with the Python Language.
+                            <td><img src = "images/keycloak.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">Keycloak Configuration TUI</h1>
+                                <p style="padding-left: 20px;">The Keycloak Configuration TUI is a script I built for the configuration of the LINCS Keycloak instance. Keycloak is the SSO provider 
+                                    that the LINCS project has chosen to use across all of its tools and services. The point of this script is to provide administrators the ability to easily configure the 
+                                    service across all development environments and all projects that require authentication.
                                 </p>
                                 <div class="expandCard">
-                                    <p style="padding-left: 20px;">The Python Handbook is coded in Python, using primarily the Tkinter module, with a
-                                        little of the extended ttk module worked in. When Python was a fairly new language to me, I started by learning basic
-                                        syntax, then immediately began the process of creating the handbook to log my progress. The version included below
-                                        is new and refreshed as of August 2019. I restarted from scratch after realizing that I could restructure the original 
-                                        to make it easier to read and maintain. Currently, the only inlcuded modules are Tkinter and layout managing information, 
-                                        however I'm working to add other modules I use often, such as Raspberry Pi GPIO and Socket Servers.
+                                    <p style="padding-left: 20px;"> The TUI (Terminal User Interface) is built in Python using the Urwid module. Keycloak configuration files are stored as JSON, 
+                                        which are what the TUI is responsible for generating based on a predefined set of questions that are prompted by the interface. This allows us to ensure some 
+                                        amount of standardization across multiple apps that access this authentication provider. Following the generation of these JSON files, they are deployed via a 
+                                        simple HTTP request made to the service.
                                     </p>
+                                    <a href="https://gitlab.com/calincs/infrastructure/keycloak-config" target="_blank"><label class="downloadButton">View The Repository</label></a>
+                                    <p></p>
                                 </div>
                                 <h2 class="expand">Read More</h2></td>
                         </tr>  
@@ -284,6 +282,63 @@
                                     <a href="https://github.com/DawsonMacPhee/Linked-List-Library" target="_blank"><label class="downloadButton">Linked Lists</label></a>
                                     <a href="https://github.com/DawsonMacPhee/Binary-Tree-Library" target="_blank"><label class="downloadButton">Trees</label></a>
                                     <a href="https://github.com/DawsonMacPhee/Hashtable-Library" target="_blank"><label class="downloadButton">Hashtables</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
+            <div class="card" id="extension">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/extension.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">The LINCS Browser Extension</h1>
+                                <p style="padding-left: 20px;">The LINCS browser extension is a Chromium-based extension designed as an access point for the datasets that LINCS stores. The basic 
+                                    function of the extension is to act as a webpage scanner for information related to the datasets of LINCS' research partners. After opening the extension on a 
+                                    website, the entire content of the site is run through an NER algorithm, the results of which are then queried against the LINCS triplestore. After this, the 
+                                    related information is displayed inline in the website content, with links provided that connect out to other LINCS tools.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;"> The main purpose of this extension is to provide researchers with an idea of the type of information LINCS can offer them. The extension is 
+                                        built using JS and HTML, along with the Wink NLP Library and SPARQL queries sent to an Apache Fuseki triplestore. I was the main developer working on this project 
+                                        for LINCS, with my employers giving me a list of requirements and allowing me the freedom to build the extension from the ground up. Later on in the development 
+                                        cycle, I worked directly with the UX team for the project to develop and implement an interface that is visually appealing and functional.
+                                    </p>
+                                    <a href="https://gitlab.com/calincs/access/browser-plugin" target="_blank"><label class="downloadButton">View The Repository</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
+            <div class="card" id="uid">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/uuid.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">UUID Generator</h1>
+                                <p style="padding-left: 20px;">The UUID generator is a really simple web service developed for the LINCS project. An essential part of linked open data generation is the need
+                                    to mint new URIs. This webservice is responsible for the creation of these URIs according to LINCS specifications. Considering the amount of universally unique identifiers we need, it 
+                                    made the most sense to create a service that would do it for us and allow us to standardize the lengths and characters used. This service also prevents the rare case of 
+                                    overlapping two different resources with the same URI.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;">This service consists of two endpoints, one for generating a single UUID and one for batch generating multiple UUIDs. The service is built off 
+                                        Node.JS, with a library called NanoID for UUID generation, and a Postgres database for storing UUIDs that have already been generated. This project gave me my first experience 
+                                        at setting up a Kubernetes Deployment through GitLab Autodevops. I also learned alot about setting up both Docker and Docker Compose for local development.
+                                    </p>
+                                    <a href="https://gitlab.com/calincs/conversion/lincs-uid" target="_blank"><label class="downloadButton">View The Repository</label></a>
                                     <p></p>
                                 </div>
                                 <h2 class="expand">Read More</h2></td>
