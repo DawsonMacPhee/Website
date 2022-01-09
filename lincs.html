@@ -1,1 +1,143 @@
-Page is under development
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="bar">
+            <hr>
+            <a href="index">
+                <label class="button1">About Me</label>
+            </a>
+            <a href="projects">
+                <label class="button2">My Projects</label>
+            </a>
+            <a href="experience">
+                <label class="button3">My Experience</label>
+            </a>
+            <hr>
+        </nav>
+        <header> 
+            <img src = "images/background.jpg" class="topImage">
+        </header>
+        <section>
+            <h1 class="subtitle">Linked Infrastructure for Networked Cultural Scholarship (LINCS)</h1>
+            <p>The LINCS Project is a 3 year infrastructure project hosted by the Digital Humanities Department at the University of Guelph. 
+                LINCS is an interdisciplinary project working with multiple Canadian Universities that aims to build web tools for humanities 
+                research. Using an RDF-style database format called Linked Open Data and adhering to the philosophy of Tim Berners-Lee's Semantic Web, LINCS 
+                hopes to assist researchers in online publishing, collaboration and curation of large datasets. This was my first Co-op position; 
+                I worked for LINCS as a Software Developer for 8 months during two Co-op semesters, and am currently continuing employment with them 
+                part time.</p>
+
+            <div class="card" style="display: flex; flex-direction: row; justify-content: center;">
+                <img src="images/lincs_logo.png" style="padding: 10px;"/>
+            </div>
+
+            <p>LINCS is a large and ambitious project, involving many moving parts. Currently, LINCS maintains about 60 GitLab repositories, 
+                having to do with many different aspects of many different projects. Some contain configuration files, some are for documentation, 
+                and many contain the source code running the numerous tools under development. LINCS also maintains connections with semantic 
+                web scholars from around the world. I myself have been in contact with developers in both Germany and the UK during my time at 
+                LINCS, and had the opportunity to contribute to international projects. It has been a truly fantastic experience, providing me 
+                with practical knowledge of many different tech stacks, most of which were far outside the realms of the original job posting. 
+                I learned PHP, Vue.JS, React, Kubernetes, Docker, Agile Development, GitLab practises, and many other libraries 
+                and modules, all while working at LINCS. Below, you can find examples of the work I've done...
+            </p>
+            <table class="table">
+                <colgroup>
+                    <col span="1" style="width: 33.33%;">
+                    <col span="1" style="width: 33.33%;">
+                </colgroup>
+                <thead class="tableHead">
+                    <tr>
+                        <th class="ex">Language</th>
+                        <th class="ex">Projects</th>
+                    </tr>
+                </thead>
+                <tbody class="tableBody">
+                    <tr>
+                        <td class="ex"><img src = "images/Java_Logo.png" class="jTableImage"></td>
+                        <td class="ex">
+                            <table class = "link">
+                                <tr>
+                                    <td class = "pLink"><a href="projects#rs">ResearchSpace</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#nssi">NSSI</a></td>
+                                </tr>
+                            </table>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ex"><img src = "images/Python_Logo.png" class="pTableImage"></td>
+                        <td class="ex">
+                            <table class = "link">
+                                <tr>
+                                    <td class = "pLink"><a href="projects#clode">Lod Viz</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#keycloak">Keycloak Configuration TUI</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ex"><img src = "images/htmlcss_Logo.png" class="hTableImage"></td>
+                        <td class="ex">
+                            <table class = "link">
+                                <tr>
+                                    <td class = "pLink"><a href="projects#extension">LINCS Browser Extension</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#rs">ResearchSpace</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#clode">Lod Viz</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ex"><img src = "images/JavaScript_Logo.png" class="jsTableImage"></td>
+                        <td class="ex">
+                            <table class = "link">
+                                <tr>
+                                    <td class = "pLink"><a href="projects#extension">LINCS Browser Extension</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#uid">UUID Generator</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#rs">ResearchSpace</a></td>
+                                </tr>
+                                <tr>
+                                    <td class = "pLink"><a href="projects#clode">Lod Viz</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ex"><img src = "images/php_logo.png" class="jsTableImage"></td>
+                        <td class="ex">
+                            <table class = "link">
+                                <tr>
+                                    <td class = "pLink"><a href="projects#clode">Lod Viz</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The main goal of having a Co-op placement is to gain experience in your field as a student, so you're not as green when you graduate 
+                and enter the real job market. Being in a Co-op program means you are required to set more specific goals to meet during 
+                a placement. My goals at LINCS were to practise code documentation, learn dev-ops practises, learn developer collaboration methods, present tech 
+                demos, exercise my technical vocabulary, and gain confidence in my abilities. I beleive that I have excelled in all of my goals, and the outstanding 
+                feedback I've received from my employer corroberates this belief. For documentation, I've adhered to the guidelines presented to me in other LINCS work 
+                that I've seen. For dev-ops and developer collaboration, I've learned Kube-ctl and Rancher, along with GitLab Agile development practises. I had 
+                opportunities to present demos of work I've accomplished both to UX teams and the executive team of the project, requiring me to use technical 
+                vocabulary to describe my work. Overall, I am very greatful to the entire team at LINCS for providing me the trust and opportunity to thrive.
+                Both my confidence and my ability to adapt to whatever is thrown my way have increased drastically over the last 8 months.
+            </p>
+        </section>
+    </body>
+</html>
