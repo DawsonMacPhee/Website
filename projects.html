@@ -318,6 +318,36 @@
                     </tbody>  
                 </table>    
             </div>
+            <div class="card" id="highlighterExtension">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/highlighter.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">Schema App Highlighter Extension</h1>
+                                <p style="padding-left: 20px;">Schema App's Highlighter Extension is one of the newest additions to their line of Schema markup creation tools. This project consists 
+                                    of a Chrome extension that allows users to navigate through pages while creating highlighter templates. Highlighter templates are one of the most commonly used 
+                                    services at Schema App. Using XPaths, these templates allow you to create generalized markup for a webpage and then quickly deploy the created markup on potentially 
+                                    millions of similar webpages. The markup itself is generated via the template every time the page loads, so it's always up to date. I worked solely on frontend 
+                                    for this app.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;">The Highlighter Extension is built using Google's provided extension developer kit, along with Vue. For the backend, it interfaces 
+                                        directly with the monolithic Laravel PHP app that already exists for the Schema App and Schema Admin App tools. Through this project, I learned a lot about 
+                                        the creation of extensions and Vue. In my first Chrome Extension, The Lincs Browser Extension, I was given free rein to build as I decided to. Now that I have 
+                                        a professionally built extension to compare it to, I can identify areas of the extension that I would have built very differently. The other really interesting 
+                                        aspect of this project was learning about the suite of dev tools that have been created solely for the dev team to use. These are parts of the app that are hidden 
+                                        from the normal user and exist solely to increase development and decrease debugging time.
+                                    </p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
             <div class="card" id="uid">
                 <table class="tableCard">
                     <colgroup>
@@ -368,6 +398,69 @@
                                         Pandas and Rdflib modules to translate the existing csv formatted data into lod.
                                     </p>
                                     <a href="https://gitlab.com/calincs/access/lod-viz" target="_blank"><label class="downloadButton">View The Repository</label></a>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
+            <div class="card" id="schemaApp">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/schemaapp.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">Schema App</h1>
+                                <p style="padding-left: 20px;">Through this interface subscribers of Schema App are able to configure their markup and deployment methods. There 
+                                    are many ways of generating markup, including a manual data creation editor for static pages, a web crawler that can go through sites to apply 
+                                    daily updates to markup, templates that can generate markup on page load, and in some cases the app is even able to pull information directly 
+                                    from third-party applications that the subscriber already uses. For deployment, users can configure integrations with services such as Shopify, 
+                                    Big Commerce, WordPress, and other third-party tools. This is a massive repository built in monolithic Laravel PHP and Vue with Bootstrap 
+                                    components. My contributions include a variety of bug fixes and UX improvements.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;"> Coming into this project, I had minimal experience in PHP. Coming out of this project, I had used PHP in almost 
+                                        everything I'd done for 4 months. It was a fantastic learning experience. Originally, I had a number of negative thoughts about PHP. I had a 
+                                        belief that it was old, outdated, and wasn't worth learning. In reality, I have come to enjoy the language a fair bit. The experience I 
+                                        previously had with EasyRdf turned out to be very useful, as Schema App used a modified version of the same library to build an API called 
+                                        GraphWrangler that further simplifies the interaction between RDF data and pragmatically accessing information. The main data source of the 
+                                        app is Amazon's Neptune triplestore, which as it turns out is incredibly similar to a triplestore I've used before called Blazegraph. It was 
+                                        even developed by the same group of people. Working on this project was great for expanding my knowledge of technologies that I've already used.
+                                    </p>
+                                    <p></p>
+                                </div>
+                                <h2 class="expand">Read More</h2></td>
+                        </tr>  
+                    </tbody>  
+                </table>    
+            </div>
+            <div class="card" id="schemaAdminApp">
+                <table class="tableCard">
+                    <colgroup>
+                            <col span="1" style="width: 25%;">
+                            <col span="1" style="width: 75%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/schemaapp-admin.png" class="cardImage"></td>
+                            <td><h1 class="cardTitle">Schema Admin App</h1>
+                                <p style="padding-left: 20px;">The Schema Admin app is the administrative side of Schema App's main platform. This is the place that Customer Success 
+                                    Managers and Operational Managers are able to access client accounts to configure their markup, set up enterprise contract deals, make administrative 
+                                    changes to a customer's account, and access metrics, customer information and more. This app essentially contains everything that has been decided 
+                                    as needing manual administrative configuration. This is where most of the Customer Insights Engine team does their work. During my time on this 
+                                    project I made a variety of UX improvements and bug fixes, primarily around the customer info reports system and the data editor.
+                                </p>
+                                <div class="expandCard">
+                                    <p style="padding-left: 20px;"> The Schema Admin App is actually a part of the same repo as the main app. It uses the same monolithic Laravel PHP and 
+                                        Vue with Bootstrap approach. By packaging them in the same repo, the company was able to reuse a lot of foundational components and increase the 
+                                        development speed for the two apps since modifying one component affects both apps. There are some new components in the admin app however, including 
+                                        some really cool datacentric models around developing data reports and modifying data entry forms. The admin app is where I was able to practice 
+                                        my SPARQL and RDF knowledge.
+                                    </p>
                                     <p></p>
                                 </div>
                                 <h2 class="expand">Read More</h2></td>
